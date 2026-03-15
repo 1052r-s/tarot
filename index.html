@@ -923,7 +923,7 @@ ${cardList}
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'anthropic-dangerous-direct-browser-access': 'true' },
+      headers: { 'Content-Type': 'application/json', 'anthropic-dangerous-direct-browser-access': 'true', 'x-api-key': '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', 'anthropic-version': '2023-06-01' },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 1000,
